@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/output.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="shortcut icon" href="/dist/img/2.jpg" type="image/x-icon" />
     <title>DIMSUM-KU</title>
   </head>
   <body>
-    <header class="backdrop:blur-md absolute z-50 top-0 left-0 w-full bg-amber-800/80 border-gray-200 dark:bg-gray-900">
+    <header class="backdrop:blur-md absolute z-50 top-0 left-0 w-full items-center text-black navbar-fixed border-gray-200 dark:bg-gray-900">
       <div class="relative max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 max-md:p-2">
         <a href="#home" class="flex items-center ml-5 space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white max-md:text-xl">DIMSUM-KU</span>
+          <span class="self-center text-2xl text-white font-semibold whitespace-nowrap max-md:text-xl judul">DIMSUM-KU</span>
         </a>
         <button
           data-collapse-toggle="navbar-default"
@@ -27,43 +28,25 @@
         </button>
         <nav class="hidden w-full md:block md:w-auto max-md:absolute max-md:z-10 max-md:w-1/2 max-md:right-5 max-md:top-12" id="navbar-default">
           <ul
-            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            class="font-medium flex bg-amber-700 flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
           >
-            <li>
-              <a
-                href="#home"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                aria-current="page"
-                >Home</a
-              >
+            <li class="group">
+              <a href="#home" class="mx-4 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">beranda</a>
             </li>
-            <li>
-              <a
-                href="#about"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >About</a
-              >
+            <li class="group">
+              <a href="#about" class="mx-4 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">tentang saya</a>
             </li>
-            <li>
-              <a
-                href="#menu"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Menu</a
-              >
+            <li class="group">
+              <a href="#portofolio" class="mx-4 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">portofolio</a>
             </li>
-            <li>
-              <a
-                href="#testimoni"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Testimoni</a
-              >
+            <li class="group">
+              <a href="#client" class="mx-4 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">client</a>
             </li>
-            <li>
-              <a
-                href="#contact"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >Contact</a
-              >
+            <li class="group">
+              <a href="#blog" class="mx-4 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">blog</a>
+            </li>
+            <li class="group">
+              <a href="#contact" class="mx-4 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">contact</a>
             </li>
           </ul>
         </nav>
@@ -93,163 +76,34 @@
       </div>
     </section>
 
-    <section id="menu" class="menu flex flex-col min-h-screen bg-amber-700 items-center pt-10 max-[425px]:pt-0">
-      <div class="mt-12 mb-4 flex justify-center items-center flex-col w-1/2">
-        <h1 class="text-7xl font-bold mb-5 max-md:text-5xl max-sm:text-3xl">Menu</h1>
-        <p class="text-xl font-serif text-center max-md:text-base max-sm:text-sm max-[425px]:text-xs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, alias?</p>
-      </div>
-      <div class="container">
-        <div class="flex flex-wrap justify-center p-5">
-          <div class="flex flex-col m-3 items-center max-w-sm bg-white border border-gray-200 rounded-lg shadow max-[425px]:w-1/2 max-[425px]:h-1/2 max-[425px]:px-5 max-[425px]:py-2 dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg" width="200" height="200" src="/dist/img/images__1_-removebg-preview.png" alt="" />
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight max-md:text-xl max-[425px]:text-base text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 max-md:text-lg max-[425px]:text-xs dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              <div class="flex items-center mt-2 mb-5">
-                <div class="flex items-center space-x-1 rtl:space-x-reverse">
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                </div>
-                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
-              </div>
-              <div class="flex items-center justify-between max-[425px]:px-2">
-                <span class="text-3xl font-bold text-gray-900 max-[425px]:text-lg dark:text-white">$599</span>
-                <a
-                  href="#"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center max-[425px]:text-sm max-[425px]:px-2 max-[425px]:py-1 max-[425px]:gap-2 max-[425px]:h-1/6 max-[425px]:font-extralight dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col m-3 items-center max-w-sm bg-white border border-gray-200 rounded-lg shadow max-[425px]:w-1/2 max-[425px]:h-1/2 max-[425px]:px-5 max-[425px]:py-2 dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg" width="200" height="200" src="/dist/img/images__1_-removebg-preview.png" alt="" />
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight max-md:text-xl max-[425px]:text-base text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 max-md:text-lg max-[425px]:text-xs dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              <div class="flex items-center mt-2 mb-5">
-                <div class="flex items-center space-x-1 rtl:space-x-reverse">
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                </div>
-                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
-              </div>
-              <div class="flex items-center justify-between max-[425px]:px-2">
-                <span class="text-3xl font-bold text-gray-900 max-[425px]:text-lg dark:text-white">$599</span>
-                <a
-                  href="#"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center max-[425px]:text-sm max-[425px]:px-2 max-[425px]:py-1 max-[425px]:gap-2 max-[425px]:h-1/6 max-[425px]:font-extralight dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col m-3 items-center max-w-sm bg-white border border-gray-200 rounded-lg shadow max-[425px]:w-1/2 max-[425px]:h-1/2 max-[425px]:px-5 max-[425px]:py-2 dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
-              <img class="rounded-t-lg" width="200" height="200" src="/dist/img/images__1_-removebg-preview.png" alt="" />
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight max-md:text-xl max-[425px]:text-base text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 max-md:text-lg max-[425px]:text-xs dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              <div class="flex items-center mt-2 mb-5">
-                <div class="flex items-center space-x-1 rtl:space-x-reverse">
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-yellow-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                  <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                    <path
-                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
-                    />
-                  </svg>
-                </div>
-                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
-              </div>
-              <div class="flex items-center justify-between max-[425px]:px-2">
-                <span class="text-3xl font-bold text-gray-900 max-[425px]:text-lg dark:text-white">$599</span>
-                <a
-                  href="#"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center max-[425px]:text-sm max-[425px]:px-2 max-[425px]:py-1 max-[425px]:gap-2 max-[425px]:h-1/6 max-[425px]:font-extralight dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                  >Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
+    <!-- Menu Section start -->
+    <section id="menu" class="bg-amber-700 items-center px-32 py-4">
+      <h2 class="text-3xl text-center font-bold mb-4"><span class="">Menu</span> Kami</h2>
+      <p class="text-sm mb-4 text-center m-auto font-serif">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, repellendus numquam quam tempora voluptatum.</p>
+      <div class="flex flex-wrap justify-center mt-10">
+        <div class="pb-12 text-center items-center flex flex-col">
+          <img src="/dist/img/images__1_-removebg-preview.png" alt="Espresso" class="rounded-full w-4/5" />
+          <h3 class="font-bold">- Dimsum Mentai -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="pb-12 text-center items-center flex flex-col">
+          <img src="/dist/img/images__1_-removebg-preview.png" alt="Espresso" class="rounded-full w-4/5" />
+          <h3 class="font-bold">- Dimsum Mentai -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="pb-12 text-center items-center flex flex-col">
+          <img src="/dist/img/images__1_-removebg-preview.png" alt="Espresso" class="rounded-full w-4/5" />
+          <h3 class="font-bold">- Dimsum Mentai -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="pb-12 text-center items-center flex flex-col">
+          <img src="/dist/img/images__1_-removebg-preview.png" alt="Espresso" class="rounded-full w-4/5" />
+          <h3 class="font-bold">- Dimsum Mentai -</h3>
+          <p class="menu-card-price">IDR 15K</p>
         </div>
       </div>
     </section>
+    <!-- Menu Section end -->
 
     <section id="testimoni" class="testimonia flex flex-col h-3/5 bg-amber-700 items-center py-6 pt-12 max-[425px]:pt-0">
       <div class="mt-12 mb-4 flex justify-center items-center flex-col w-1/2">
@@ -258,7 +112,10 @@
       </div>
       <div class="container mx-auto">
         <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
-          <figure class="flex flex-col items-center justify-center px-6 py-8 m-6 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+          <div>
+            <img class="object-cover w-full rounded-t-lg h-64 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="dist/img/contoh1.jpg" alt="" />
+          </div>
+          <figure class="flex flex-col items-center justify-center px-6 py-8 my-6 mx-3 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
             <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
               <p class="my-4">If you care for your time, I hands down would go with this."</p>
@@ -274,7 +131,7 @@
       </div>
     </section>
 
-    <section id="contact" class="flex flex-col h-auto bg-amber-700 items-center pt-18">
+    <!-- <section id="contact" class="flex flex-col h-auto bg-amber-700 items-center pt-18">
       <div class="mt-8 flex justify-center items-center flex-col w-1/2">
         <h1 class="text-7xl font-bold mb-6 max-md:text-5xl max-sm:text-3xl">Contact</h1>
         <p class="text-xl font-serif text-center max-md:text-base max-sm:text-sm max-[425px]:text-xs">untuk informasi lebih lanjut silahkan kunjungi kami melalui maps yang sudah tersedia</p>
@@ -337,12 +194,67 @@
           </div>
         </div>
       </div>
+    </section> -->
+
+    <section id="contact" class="contact flex flex-col h-3/5 bg-amber-700 items-center py-6 pt-12 max-[425px]:pt-0">
+      <h2 class="text-3xl text-center font-bold mb-4"><span>Kontak</span> Kami</h2>
+      <p class="text-sm mb-4 text-center m-auto font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident.</p>
+
+      <div class="flex flex-col items-center bg-white/30 rounded-sm">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3890961145694!2d109.0549386!3d-6.963343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fbc6532073a75%3A0x3c135d445f3545ff!2sBrother%20Cell!5e0!3m2!1sid!2sid!4v1690030509685!5m2!1sid!2sid"
+          width="300"
+          height="250"
+          allowfullscreen=""
+          loading="lazy"
+          class="mt-2"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        <form action="" class="text-center px-20 py-8 flex-1">
+          <div class="flex items-center mt-4 bg-amber-800/80 border-amber-800/80 border-2">
+            <i data-feather="user" class="px-1"></i>
+            <input type="text" placeholder="nama" class="w-full p-4 font-light bg-none" />
+          </div>
+          <div class="flex items-center mt-4 bg-amber-800/80 border-amber-800/80 border-2">
+            <i data-feather="mail" class="px-1"></i>
+            <input type="text" placeholder="email" class="w-full p-4 font-light bg-none" />
+          </div>
+          <div class="flex items-center mt-4 bg-amber-800/80 border-amber-800/80 border-2">
+            <i data-feather="phone" class="px-1"></i>
+            <input type="text" placeholder="no hp" class="w-full p-4 font-light bg-none" />
+          </div>
+          <button type="submit" class="mt-10 inline-block px-4 py-5 font-semibold text-white bg-amber-800 cursor-pointer">kirim pesan</button>
+        </form>
+      </div>
     </section>
+    <!-- Contact Section end -->
 
-    <footer>
-      <div class="text-white bg-black p-4 text-center">Copyright © 2022. Dimsum-ku</div>
+    <!-- Footer start -->
+    <footer class="bg-black text-center px-4">
+      <div class="px-4 py-0 flex justify-center">
+        <a href="https://instagram.com/as.sidik_?igshid=NGExMmI2YTkyZg==" class="m-4 text-white" target="_blank"><i data-feather="instagram"></i></a>
+        <a href="https://twitter.com/masbro77202?t=cE7rmidbgWarVZcOR4YORA&s=09" class="m-4 text-white" target="_blank"><i data-feather="twitter"></i></a>
+        <a href="https://www.facebook.com/ahmad.sofi.sidik10" target="_blank" class="m-4 text-white"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="mb-4">
+        <a href="#home" class="text-white px-3 py-4">Home</a>
+        <a class="text-white px-3 py-4" href="#about">Tentang Kami</a>
+        <a class="text-white px-3 py-4" href="#menu">Menu</a>
+        <a class="text-white px-3 py-4" href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p class="text-white">Created by <a href="" class="text-white font-bold">assidik</a>. | &copy; 2023.</p>
+      </div>
     </footer>
+    <!-- Footer end -->
+    <script src="/dist/js/index.js"></script>
 
+    <script>
+      feather.replace();
+    </script>
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
